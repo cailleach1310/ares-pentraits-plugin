@@ -72,12 +72,10 @@ Update with: custom_files/profile-custom-tabs.hbs
 
 #### /aresmush/game/config/achievements.yml
 You can configure trait achievements to show the same icon as fs3 achievements. Or you can configure another here.
-
     types:
       trait: fa-cubes
 
 #### /aresmush/game/config/chargen.yml
-
     traits_blurb: |-
       %xctrait/list%xn shows your traits.
       %xctrait/set <trait>=<value>%xn lets you set a trait directly.
@@ -103,6 +101,15 @@ You don't have to modify the pentraits.yml for the plugin to work, but you can m
 
 #### achievements
 The plugin comes with two predefined trait achievements, 'checked_trait' and 'critical_check'. More can be added here.
+
+#### min_traits
+The minimum value for a trait in chargen is 4. You can change the value here.
+
+#### max_traits
+The maximum value for a trait in chargen is 15. You can change the value here.
+
+#### trait_points
+Trait points for chargen are 10 by default, but this is configurable.
 
 #### shortcuts
 'traits' has been defined as shortcut for 'trait/list'. You can add more shortcuts here.
