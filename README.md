@@ -74,8 +74,8 @@ Update with: custom_files/profile-custom-tabs.hbs
 You can configure trait achievements to show the same icon as fs3 achievements. Or you can configure another here.
 
    types:
-(...)
-    trait: fa-cubes
+   (...)
+     trait: fa-cubes
 
 #### /aresmush/game/config/chargen.yml
 
@@ -87,7 +87,7 @@ You can configure trait achievements to show the same icon as fs3 achievements. 
     %xctrait/reset%xn resets your traits to a balanced state. Do this first!
   
    stages:
-(...)
+   (...)
     traits:
       title: Traits
       text: |-
