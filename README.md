@@ -24,6 +24,9 @@ This plugin lets you set your character traits in chargen both from the game or 
 
 Use the 'traits' or 'trait/list' command to view your character traits.
 
+### Game Client - Checking Traits
+![check-trait-client](/images/check_trait_client.PNG)
+
 ### Webportal - Profile View
 ![profile-traits](/images/profile_traits.PNG)
 
@@ -31,7 +34,7 @@ Use the 'traits' or 'trait/list' command to view your character traits.
 ![chargen-traits](/images/chargen_traits.PNG)
 
 ### Webportal - Checking Traits
-![checking-traits](/images/webportal_trait_check.PNG)
+![checking-traits-web](/images/webportal_trait_check.PNG)
 
 ## Prerequisites
 tbd.
