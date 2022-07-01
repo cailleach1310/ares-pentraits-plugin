@@ -1,0 +1,43 @@
+---
+pentraits:
+  achievements:
+    trait_check:
+      type: trait
+      message: Checked a trait.
+    critical_check:
+      type: trait
+      message: Checked a trait and scored a critical success.
+  max_rating: 15
+  min_rating: 5
+  pentraits_blurb: Traits define your virtues and vices. They can be checked in rp,
+    using the %xccheck <trait>%xn command.
+  shortcuts:
+    traits: trait/list
+  trait_points: 10
+  traits:
+  - name: Chaste
+    opposite: Lustful
+  - name: Energetic
+    opposite: Lazy
+  - name: Forgiving
+    opposite: Vengeful
+  - name: Generous
+    opposite: Selfish
+  - name: Honest
+    opposite: Deceitful
+  - name: Just
+    opposite: Arbitrary
+  - name: Merciful
+    opposite: Cruel
+  - name: Modest
+    opposite: Proud
+  - name: Pious
+    opposite: Worldly
+  - name: Prudent
+    opposite: Reckless
+  - name: Temperate
+    opposite: Indulgent
+  - name: Trusting
+    opposite: Suspicious
+  - name: Valorous
+    opposite: Cowardly
