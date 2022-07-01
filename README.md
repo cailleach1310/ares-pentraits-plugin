@@ -25,7 +25,7 @@ This plugin lets you set your character traits in chargen both from the game or 
 Use the 'traits' or 'trait/list' command to view your character traits.
 
 ### Game Client - Checking Traits
-![check-trait-client](/images/check_trait_client.PNG)
+![check-trait-client](/images/trait_check_client.PNG)
 
 ### Webportal - Profile View
 ![profile-traits](/images/profile_traits.PNG)
