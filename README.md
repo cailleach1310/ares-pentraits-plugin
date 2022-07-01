@@ -84,13 +84,13 @@ You can configure trait achievements to show the same icon as fs3 achievements. 
       %xctrait/raise <trait>%xn and %xctrait/lower <trait>%xn are another way of changing your trait values.
       %xctrait/points will show you how many points you have spent.
       %xctrait/reset%xn resets your traits to a balanced state. Do this first!
-  stages:
-    traits:
-      title: Traits
-      text: |-
-          Setting particular character traits is optional, but you'll have to at least do a %xctraits/reset%xn to set them in a balanced state. They are a way you can use to give more depth to the character, and also explore reactions of your character by checking a trait.
+    stages:
+      traits:
+        title: Traits
+        text: |-
+            Setting particular character traits is optional, but you'll have to at least do a %xctraits/reset%xn to set them in a balanced state. They are a way you can use to give more depth to the character, and also explore reactions of your character by checking a trait.
 
-          Checking a trait in game can add more flavor, and sometimes might go against your character's interest. But it will always be up to you, the player, to interpret the result of a check in a way that is comfortable for you.
+            Checking a trait in game can add more flavor, and sometimes might go against your character's interest. But it will always be up to you, the player, to interpret the result of a check in a way that is comfortable for you.
 
           %xctrait/list%xn shows your traits.
           %xctrait/set <trait>=<value>%xn lets you set a trait directly.
