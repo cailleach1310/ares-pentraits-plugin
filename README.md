@@ -72,8 +72,8 @@ Update with: custom_files/profile-custom-tabs.hbs
 
 #### /aresmush/game/config/achievements.yml
 You can configure trait achievements to show the same icon as fs3 achievements. Or you can configure another here.
-    types:
-      trait: fa-cubes
+     types:
+       trait: fa-cubes
 
 #### /aresmush/game/config/chargen.yml
     traits_blurb: |-
