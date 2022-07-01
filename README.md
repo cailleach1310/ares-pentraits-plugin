@@ -73,21 +73,18 @@ Update with: custom_files/profile-custom-tabs.hbs
 #### /aresmush/game/config/achievements.yml
 You can configure trait achievements to show the same icon as fs3 achievements. Or you can configure another here.
 
-   types:
-   (...)
-     trait: fa-cubes
+  types:
+    trait: fa-cubes
 
 #### /aresmush/game/config/chargen.yml
 
-   traits_blurb: |-
+  traits_blurb: |-
     %xctrait/list%xn shows your traits.
     %xctrait/set <trait>=<value>%xn lets you set a trait directly.
     %xctrait/raise <trait>%xn and %xctrait/lower <trait>%xn are another way of changing your trait values.
     %xctrait/points will show you how many points you have spent.
     %xctrait/reset%xn resets your traits to a balanced state. Do this first!
-  
-   stages:
-   (...)
+  stages:
     traits:
       title: Traits
       text: |-
