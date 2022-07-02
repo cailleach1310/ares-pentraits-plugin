@@ -1,0 +1,21 @@
+<div class="row pen-traits-box"> 
+   <div class="fs3-rating-control">
+     <div class="col-sm-1">
+         {{yield}}
+     </div>
+    <div class="col-sm-2" align=right>
+       <button class="btn btn-primary" {{action "increment"}}><b>{{this.name}}</b>: {{this.rating}}</button>
+   </div>
+   <div class="col-sm-5">
+     <div class="fs3-rating-display">
+        <Fs3Dots @rating={{this.rating}} @max={{20}} />
+      </div>
+   </div>
+   <div class="col-sm-2">
+      <button class="btn btn-primary" {{action "decrement"}}><b>{{this.opposite}}</b>: {{this.opp_rating}}</button>
+   </div>
+   <div class="col-sm-1">
+      {{yield}}
+   </div>
+  </div>
+</div>

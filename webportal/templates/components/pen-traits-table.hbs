@@ -1,0 +1,10 @@
+<div class="char-ability-title">Character Traits</div>
+<table class="char-ability-list">
+   {{#each this.list as |trait| }}
+   <tr>
+    <td><div align=right>{{trait.name}}: {{trait.rating}}</div></td>
+    <td><center><Fs3Dots @rating={{trait.rating}} @max={{this.max}} /></center></td>
+    <td>{{trait.opposite}}: {{trait.opp_rating}}</td>
+  </tr>
+   {{/each}}
+</table>

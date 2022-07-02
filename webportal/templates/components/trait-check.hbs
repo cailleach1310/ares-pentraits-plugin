@@ -1,0 +1,20 @@
+<BsModalSimple @title="Add Trait Check" @closeTitle="Cancel" @submitTitle="Check" @size={{null}} @fade={{true}} @open={{this.selectTraitCheck}} @onSubmit={{action "addCheck"}} @onHide={{action (mut this.selectTraitCheck) false}}>
+
+    <p><b>Trait Check</b></p>
+    <p>Select a trait, or type one in the box.</p>
+    <select onchange={{action (mut this.checkString) value="target.value"}}>
+      {{#each model.pentraits as |traitname|}}
+        <option value={{traitname}}>{{traitname}}</option>
+      {{/each}}
+    </select>
+    <Input @type="text" size={{25}} id="checkString" @enter={{action "addCheck"}} @value={{this.checkString}} />
+
+   <hr>
+    <p><b>Add Check for Another PC (Admin only)</b></p>
+    
+    <p>
+      Character: <Input @type="text" size={{15}} id="pcCheckName" @enter={{action "addCheck"}} @value={{this.pcCheckName}} /> 
+      Trait: <Input @type="text" size={{15}} id="pcCheckTrait" @enter={{action "addCheck"}} @value={{this.pcCheckTrait}} /><br>
+    </p>
+
+ </BsModalSimple>
