@@ -48,8 +48,8 @@ Update with: custom_files/custom_char_fields.rb
 #### aresmush/plugins/chargen/custom_app_review.rb
 Update with: custom_files/custom_app_review.rb
 
-### Updating Custom Web Portal Chargen and Profile Files
-If you don't have any existing edits to these custom files, you can use the files in the custom_files folder of this repository as-is. If you do, then you may use them as templates to add the lines of code needed for the marque plugin.
+### Updating Custom Webportal Chargen and Profile Files
+If you don't have any existing edits to these custom files, you can use the files in the custom_files folder of this repository as-is. If you do, then you may use them as templates to add the lines of code needed for the pentraits plugin.
 
 #### ares-webportal/app/components/chargen-custom.js
 Update with: custom_files/chargen-custom.js
@@ -66,9 +66,18 @@ Update with: custom_files/profile-custom.hbs
 #### ares-webportal/app/templates/components/profile-custom-tabs.hbs
 Update with: custom_files/profile-custom-tabs.hbs
 
+### Updating Custom Web Portal Live Scene Files
+If you don't have any existing edits to these custom files, you can use the files in the custom_files folder of this repository as-is. If you do, then you may use them as templates to add the lines of code needed for the pentraits plugin.
+
+#### ares-webportal/app/templates/components/live-scene-custom-play.hbs
+Update with: custom_files/live-scene-custom-play.hbs
+
+#### ares-webportal/app/components/live-scene-custom-play.js
+Update with: live-scene-custom-play.js
+
 ## Configuration
 
-### Other plugins
+### Other Plugins
 
 #### /aresmush/game/config/achievements.yml
 You can configure trait achievements to show the same icon as fs3 achievements. Or you can configure another here.
@@ -96,17 +105,20 @@ You can configure trait achievements to show the same icon as fs3 achievements. 
           %xctrait/points%xn will show you how many points you have spent.
           %xctrait/reset%xn resets your traits to a balanced state. Do this first!
 
-### pentraits.yml 
-You don't have to modify the pentraits.yml for the plugin to work, but you can make adjustments here. The keys in the yaml are explained below.
+### PenTraits Configuration 
+You don't have to modify the pentraits.yml for the plugin to work, but you can make adjustments here. The keys in the yaml are explained below:
 
 #### achievements
 The plugin comes with two predefined trait achievements, 'checked_trait' and 'critical_check'. More can be added here.
 
-#### min_traits
-The minimum value for a trait in chargen is 4. You can change the value here.
+#### min_rating
+The minimum value for a trait in chargen is 5. You can change the value here.
 
-#### max_traits
+#### max_rating
 The maximum value for a trait in chargen is 15. You can change the value here.
+
+#### traits
+The plugin comes with the standard Pendragon rpg traits, but you can actually configure your own pairs of traits here.  
 
 #### trait_points
 Trait points for chargen are 10 by default, but this is configurable.
