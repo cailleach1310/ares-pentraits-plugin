@@ -5,11 +5,11 @@ A plugin that implements a Pendragon traits system for aresmush.
 Lyanna @ AresCentral
 
 ## Overview
-The Pendragon rpg uses a system of opposing traits that are used to define a character. Under particular circumstances, traits can be checked, and depending on the outcome, a character may behave accordingly. It is a handy tool to use if you want to go with the flow in your rp. In rare cases, staff will ask a trait to be checked during a staff run plot.
+The Pendragon rpg uses a system of opposing traits that are used to define a character. Under particular circumstances, traits can be checked, and depending on the outcome, a character may behave accordingly. It can give inspiration to players and add spice to rp, and sometimes lead to scenes departing from prior expectations.
 
 Defining traits can be optional for players. When using the traits system players are not required to set particular traits, this will have them start out with perfectly balanced pairs of traits. Critical successes in particular situations may have them qualify to be considered for a trait raise but this will be up to game staff. Any traits higher than 15 mean a certain fame for that trait and this character. This can only be earned through rp, as traits can't be set higher than 15 in chargen.
 
-Visibility of traits is limited to the character in question and admin. If you want traits to be generally visible, you can easily remove the check in the respective helper file.
+Visibility of traits in the profile is limited to the character in question and admin. If you want traits to be generally visible, you can easily remove the check in the respective helper file.
 
 This plugin has been developed and tested with aresmush v0.108. It requires some adjustments of custom parts of the code, so that future upgrades usually shouldn't affect this plugin.
 
@@ -79,13 +79,13 @@ Update with: live-scene-custom-play.js
 
 ### Other Plugins
 
-#### /aresmush/game/config/achievements.yml
+#### aresmush/game/config/achievements.yml
 You can configure trait achievements to show the same icon as fs3 achievements. Or you can configure another here.
 
      types:
        trait: fa-cubes
 
-#### /aresmush/game/config/chargen.yml
+#### aresmush/game/config/chargen.yml
     traits_blurb: |-
       %xctrait/list%xn shows your traits.
       %xctrait/set <trait>=<value>%xn lets you set a trait directly.
@@ -107,22 +107,22 @@ You can configure trait achievements to show the same icon as fs3 achievements. 
           %xctrait/reset%xn resets your traits to a balanced state. Do this first!
 
 ### PenTraits Configuration 
-You don't have to modify the pentraits.yml for the plugin to work, but you can make adjustments here. The keys in the yaml are explained below:
+The pentraits.yml comes with a default configuration that can be adjusted to your needs. The keys in the yaml are explained below:
 
 #### achievements
 The plugin comes with two predefined trait achievements, 'checked_trait' and 'critical_check'. More can be added here.
 
 #### min_rating
-The minimum value for a trait in chargen is 5. You can change the value here.
+The minimum value for a trait in chargen, per default 5.
 
 #### max_rating
-The maximum value for a trait in chargen is 15. You can change the value here.
+The maximum value for a trait in chargen, per default 15. 
 
 #### traits
 The plugin comes with the standard Pendragon rpg traits, but you can actually configure your own pairs of traits here.  
 
 #### trait_points
-Trait points for chargen are 10 by default, but this is configurable.
+Trait points for chargen, per default 10.
 
 #### shortcuts
 'traits' has been defined as shortcut for 'trait/list'. You can add more shortcuts here.
