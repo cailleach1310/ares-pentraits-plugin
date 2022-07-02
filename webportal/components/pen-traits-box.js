@@ -1,13 +1,10 @@
 import Component from '@ember/component';
 
 export default Component.extend({
-    minRating: 5,
-    maxRating: 15,
-
     actions: {
         increment() {
             var current = this.rating;
-            if (current < this.maxRating) {
+            if (current < 20) {
                 this.set('rating',  current + 1);
                 this.set('opp_rating',  19 - current);
             }
@@ -16,7 +13,7 @@ export default Component.extend({
 
         decrement() {
             var current = this.rating;
-            if (current > this.minRating) {
+            if (current > 0) {
                 this.set('rating',  current - 1);
                 this.set('opp_rating',  21 - current);
             }
