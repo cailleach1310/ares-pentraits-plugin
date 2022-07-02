@@ -1,0 +1,32 @@
+   <div id="systemgoals" class="tab-pane fade">
+      {{{ansi-format text=this.char.custom.goals}}}
+   </div>
+  
+  <div id="connections" class="tab-pane fade">
+     {{{ansi-format text=this.char.custom.connections}}}
+  </div>
+
+  <div id="systemdowayne" class="tab-pane fade">
+     {{{ansi-format text=this.char.custom.dowayne}}}
+  </div>
+
+  <div id="systemmarque" class="tab-pane fade">
+      <div class="xp-ability-name"><br>Current progress in percent:</div>
+      <br>
+      <div class="xp-progress">
+         <ProgressBar @currentValue={{{this.char.custom.marque}}} @maxValue="100" @bgColor="bg-success" @showLabel=true>
+         </ProgressBar>
+         <div class="progress-value">{{{this.char.custom.marque}}}%</div>
+      </div>
+
+  </div>
+
+  <div id="pentraits" class="tab-pane fade">
+    <center>
+       <div class="col col-md-9 col-sm-12">
+          <div class="row pen-traits-box"> 
+            <PenTraitsTable @title="Traits" @list={{char.custom.pen_traits}} @max={{20}} />
+          </div>
+       </div>
+    </center>
+ </div>
