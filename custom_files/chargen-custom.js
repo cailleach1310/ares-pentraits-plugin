@@ -39,10 +39,7 @@ export default Component.extend({
   onUpdate: function() {
     // Return a hash containing your data.  Character data will be in 'char'.  For example:
     // 
-    return { goals: this.get('char.custom.goals'),
-            marque: this.get('char.custom.marque'),
-           connections: this.get('char.custom.connections'),
-           pen_traits: this.createTraitHash(this.get('char.custom.pen_traits')) }
+    return { pen_traits: this.createTraitHash(this.get('char.custom.pen_traits')) }
   },
 
   createTraitHash: function(traitlist) {
