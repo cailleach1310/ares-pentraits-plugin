@@ -81,6 +81,7 @@ Update with: live-scene-custom-play.js
 
 #### /aresmush/game/config/achievements.yml
 You can configure trait achievements to show the same icon as fs3 achievements. Or you can configure another here.
+
      types:
        trait: fa-cubes
 
