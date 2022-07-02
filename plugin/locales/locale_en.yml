@@ -1,0 +1,38 @@
+en:
+    pentraits:
+        
+        # Chargen Values Set
+        trait_set: "%{target}'s trait '%{name}' is now %{rating}."
+        trait_lower: "%{target}'s trait '%{name}' is lowered to %{rating}."
+        trait_raise: "%{target}'s trait '%{name}' is raised to %{rating}."
+        admin_trait_set: "You set %{name}'s %{trait_name} trait to %{rating}."
+        max_rating_is: "You can't raise that trait any higher."
+        min_rating_is: "You can't lower that trait any lower."
+        error_saving_trait: "There was a problem saving %{name}: %{error}"
+
+        # Errors
+        trait_not_found: "Invalid trait '%{name}'!"
+        no_admin: "You must be an admin to use this option!"
+        invalid_char_name: "There is no character of this name!"
+
+        # Reset
+        reset_complete: "Setting balanced traits."
+
+        # Success
+        critical_failure: "%xRCritical Failure!%xn"
+        failure: "%xrFailure%xn"
+        success: "%xgSuccess%xn"
+        critical_success: "%xh%xgCritical Success!%xn"
+
+        # Checks
+        check_result: "%x24<Trait>%xn %{name} checks %{trait} at %{rating} and rolls %{roll} --> %{success}"
+        check_result_admin: "%x24<Trait>%xn (%{admin}) %{name} checks %{trait} at %{rating} and rolls %{roll} --> %{success}"
+        check_opposing: "%x24<Trait> %x37Checking the opposing trait.%xn%r"
+        check_both_fail: "%x24<Trait>%xn Both checks fail!"
+        check_critical_fail: "%x24<Trait>%xn This means a critical success on the opposing trait %{opposite}!"
+
+        # Review
+        trait_points_spent: "%{total} trait points spent. (%{max} max)"
+        traits_not_set: "Traits aren't set! Please do a 'trait/reset'."
+        too_many: "Too many points spent on traits! You can only spend %{max}."
+        trait_beyond_limits: "You can't have traits lower than %{min} or higher than %{max} in chargen."
