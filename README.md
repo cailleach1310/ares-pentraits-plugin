@@ -30,9 +30,6 @@ Use the 'traits' or 'trait/list' command to view your character traits.
 ### Webportal - Profile View
 ![profile-traits](/images/profile_traits.PNG)
 
-### Webportal - Setting Traits
-![chargen-traits](/images/chargen_traits.PNG)
-
 ### Webportal - Checking Traits
 ![checking-traits-web](/images/webportal_trait_check.PNG)
 
