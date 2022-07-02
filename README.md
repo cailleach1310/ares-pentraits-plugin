@@ -7,9 +7,11 @@ Lyanna @ AresCentral
 ## Overview
 The Pendragon rpg uses a system of opposing traits that are used to define a character. Under particular circumstances, traits can be checked, and depending on the outcome, a character may behave accordingly. It is a handy tool to use if you want to go with the flow in your rp. In rare cases, staff will ask a trait to be checked during a staff run plot.
 
-Defining traits can be optional. If using the traits system you are not required to set particular traits, this will have you start out with perfectly balanced pairs of traits. Critical successes in particular situations may have you qualify to be considered for a trait raise. Any traits higher than 15 mean a certain fame for that trait and this character. This can only be earned through rp, as traits can't be set higher than 15 in chargen.
+Defining traits can be optional for players. When using the traits system players are not required to set particular traits, this will have them start out with perfectly balanced pairs of traits. Critical successes in particular situations may have them qualify to be considered for a trait raise but this will be up to game staff. Any traits higher than 15 mean a certain fame for that trait and this character. This can only be earned through rp, as traits can't be set higher than 15 in chargen.
 
-This plugin lets you set your character traits in chargen both from the game or the webportal. Also, checking traits is possible from the game client but also from the live scene menu on the webportal.
+Visibility of traits is limited to the character in question and admin. If you want traits to be generally visible, you can easily remove the check in the respective helper file.
+
+This plugin has been developed and tested with aresmush v0.108. It requires some adjustments of custom parts of the code, so that future upgrades usually shouldn't affect this plugin.
 
 ### What this plugin covers
 * Chargen: Setting traits during chargen, from the game client or from the webportal.
@@ -17,6 +19,7 @@ This plugin lets you set your character traits in chargen both from the game or 
 * Staff-side setting of character traits through the trait/set command on the game client.
 * Staff-side post chargen raising of traits from the webportal through the chargen option on a char page.
 * Awarding achievements for checking a trait for the first time and for the first critical trait check.
+* Checking traits from the game client and/or from the webportal's live scene menu.
 
 ## Screenshots
 ### Game Client - Traits View
@@ -32,9 +35,6 @@ Use the 'traits' or 'trait/list' command to view your character traits.
 
 ### Webportal - Checking Traits
 ![checking-traits-web](/images/webportal_trait_check.PNG)
-
-## Prerequisites
-tbd.
 
 ## Installation
 In the game, run: plugin/install https://github.com/cailleach1310/ares-pentraits-plugin
