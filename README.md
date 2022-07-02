@@ -5,9 +5,11 @@ A plugin that implements a Pendragon traits system for aresmush.
 Lyanna @ AresCentral
 
 ## Overview
-The Pendragon rpg uses a system of opposing traits that are used to define a character. Under particular circumstances, traits can be checked, and depending on the outcome, a character may behave accordingly. It can give inspiration to players and add spice to rp, and sometimes lead to scenes departing from prior expectations.
+The Pendragon rpg uses a system of opposing traits that are used to define a character. Under particular circumstances traits can be checked, and depending on the outcome, a character may behave accordingly. It can give inspiration to players and add spice to rp, and sometimes lead to scenes departing from prior expectations.
 
-Defining traits can be optional for players. When using the traits system players are not required to set particular traits, this will have them start out with perfectly balanced pairs of traits. Critical successes in particular situations may have them qualify to be considered for a trait raise but this will be up to game staff. Any traits higher than 15 mean a certain fame for that trait and this character. This can only be earned through rp, as traits can't be set higher than 15 in chargen.
+A check is rolled with a 20-sided die, and the result is then compared to the character's rating of the trait. If a trait is checked and fails, the opposing trait will be checked right after. If a check fails critically, it means a critical success of the opposing trait. 
+
+Defining traits can be optional for players. When going with the default (after the first reset), this will have them start out with perfectly balanced pairs of traits. Critical successes in particular situations may qualify for a trait raise after chargen but this will be up to game staff. Any traits higher than 15 mean a certain fame for that trait and this character. 
 
 Visibility of traits in the profile is limited to the character in question and admin. If you want traits to be generally visible, you can easily remove the check in the respective helper file.
 
