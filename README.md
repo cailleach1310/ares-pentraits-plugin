@@ -5,7 +5,7 @@ A plugin that implements a Pendragon traits system for aresmush.
 Lyanna @ AresCentral
 
 ## Overview
-The Pendragon rpg uses a system of opposing traits that are used to define a character. Under particular circumstances traits can be checked, and depending on the outcome, a character may behave accordingly. It can give inspiration to players and add spice to rp, and sometimes lead to scenes departing from prior expectations.
+The Pendragon rpg uses a system of opposing traits that define a character. Under particular circumstances traits can be checked, and depending on the outcome, a character may behave accordingly. It can give inspiration to players and add spice to rp, and sometimes lead to scenes departing from prior expectations.
 
 A check is rolled with a 20-sided die, and the result is then compared to the character's rating of the trait. If a trait is checked and fails, the opposing trait will be checked right after. If a check fails critically, it means a critical success of the opposing trait. 
 
