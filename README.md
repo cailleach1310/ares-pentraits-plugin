@@ -13,7 +13,7 @@ Defining traits can be optional for players. When going with the default (after 
 
 Visibility of traits in the profile is limited to the character in question and admin. If you want traits to be generally visible, you can easily remove the check in the respective helper file.
 
-This plugin has been developed and tested with aresmush v0.108. It requires some adjustments of custom parts of the code, so that future upgrades usually shouldn't affect this plugin.
+This plugin has been developed and tested with aresmush v0.108. Necessary adjustments are limited to custom parts of the code, so that future aresmush upgrades usually won't affect this plugin.
 
 ### What this plugin covers
 * Chargen: Setting traits during chargen, from the game client or from the webportal, including a check for valid traits in the chargen app review.
