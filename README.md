@@ -69,7 +69,7 @@ Update with: custom_files/profile-custom-tabs.hbs
 Update with: custom_files/live-scene-custom-play.hbs
 
 #### ares-webportal/app/components/live-scene-custom-play.js
-Update with: live-scene-custom-play.js
+Update with: custom_files/live-scene-custom-play.js
 
 ## Configuration
 
