@@ -16,7 +16,7 @@ Visibility of traits in the profile is limited to the character in question and 
 This plugin has been developed and tested with aresmush v0.108. Necessary adjustments are limited to custom parts of the code, so that future aresmush upgrades usually won't affect this plugin.
 
 ### What this plugin covers
-* Chargen: Setting traits during chargen, from the game client or from the webportal, including a check for valid traits in the chargen app review.
+* Chargen: Setting traits during chargen, from the game client or from the webportal, including a check for valid trait settings in the chargen app review.
 * Profile: Traits are part of the webportal character profile.
 * Staff-side setting of character traits through the trait/set command on the game client.
 * Staff-side post chargen raising of traits from the webportal through the chargen option on a char page.
