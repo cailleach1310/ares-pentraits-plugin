@@ -74,14 +74,17 @@ Update with: live-scene-custom-play.js
 ## Configuration
 
 ### Other Plugins
+Configuration files of other plugins can be adjusted to make life easier. Suggestions can be found below.
 
 #### aresmush/game/config/achievements.yml
-You can configure trait achievements to show the same icon as fs3 achievements. Or you can configure another here.
+You can configure trait achievements to show the same icon as fs3 achievements. 
 
      types:
        trait: fa-cubes
 
 #### aresmush/game/config/chargen.yml
+For those going through chargen on the game client, it is necessary to add a chargen stage for traits.
+
     traits_blurb: |-
       %xctrait/list%xn shows your traits.
       %xctrait/set <trait>=<value>%xn lets you set a trait directly.
@@ -103,10 +106,10 @@ You can configure trait achievements to show the same icon as fs3 achievements. 
           %xctrait/reset%xn resets your traits to a balanced state. Do this first!
 
 ### PenTraits Configuration 
-The pentraits.yml comes with a default configuration that can be adjusted to your needs. The keys in the yaml are explained below:
+The pentraits.yml comes with a default configuration that can be adjusted to your needs. The keys are explained below:
 
 #### achievements
-The plugin comes with two predefined trait achievements, 'checked_trait' and 'critical_check'. More can be added here.
+The plugin comes with two predefined trait achievements, 'checked_trait' and 'critical_check'. 
 
 #### min_rating
 The minimum value for a trait in chargen, per default 5.
@@ -121,7 +124,7 @@ The plugin comes with the standard Pendragon rpg traits, but you can actually co
 Trait points for chargen, per default 10.
 
 #### shortcuts
-'traits' has been defined as shortcut for 'trait/list'. You can add more shortcuts here.
+'traits' has been defined as shortcut for 'trait/list'. 
 
 ## Uninstallation
 Removing the plugin requires some code fiddling. See [Uninstalling Plugins](https://www.aresmush.com/tutorials/code/extras.html#uninstalling-plugins).
