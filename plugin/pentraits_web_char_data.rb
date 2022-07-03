@@ -6,10 +6,11 @@ module AresMUSH
         
         show_traits = PenTraits.can_manage_traits?(viewer) || is_owner
         
-        { 
-             traits: show_traits ? get_trait_list(char.pen_traits) : nil,
-             traitnames: get_simple_trait_list()
-        }
+        if show_traits
+           return get_trait_list(char.pen_traits)
+        else
+           return nil
+        end
       end
 
       def get_trait_list(list)
@@ -20,16 +21,6 @@ module AresMUSH
             opposite: a.opposite,
             opp_rating: a.opp_rating
           }}
-      end
-
-      def get_simple_trait_list()
-        simple_traits = []
-        PenTraits.positives.each do |a|
-           simple_traits << a
-           b = PenTraits.get_opp_trait(a)
-           simple_traits << b
-        end
-        simple_traits.sort
       end
 
     end
