@@ -9,7 +9,7 @@ The Pendragon rpg uses a system of opposing traits that are used to define a cha
 
 A check is rolled with a 20-sided die, and the result is then compared to the character's rating of the trait. If a trait is checked and fails, the opposing trait will be checked right after. If a check fails critically, it means a critical success of the opposing trait. 
 
-Defining traits can be optional for players. When going with the default (after the first reset), this will have them start out with perfectly balanced pairs of traits. Critical successes in particular situations may qualify for a trait raise after chargen but this will be up to game staff. Any traits higher than 15 mean a certain fame for that trait and this character. 
+Defining traits can be optional for players. When going with the default (after the first reset), this will have them start out with perfectly balanced pairs of traits. Critical successes in particular situations may qualify for a trait raise after chargen but this will be up to game staff. If a character has any traits higher than 15, this means that this character is famous for that particular trait. 
 
 Visibility of traits in the profile is limited to the character in question and admin. If you want traits to be generally visible, you can easily remove the check in the respective helper file.
 
