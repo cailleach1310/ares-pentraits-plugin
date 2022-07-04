@@ -11,8 +11,6 @@ A check is rolled with a 20-sided die, and the result is then compared to the ch
 
 Defining traits can be optional for players. When going with the default (after the first reset), this will have them start out with perfectly balanced pairs of traits. Critical successes in particular situations may qualify for a trait raise after chargen but this will be up to game staff. If a character has any traits higher than 15, this means that this character is famous for that particular trait. 
 
-Visibility of traits in the profile is limited to the character in question and admin. If you want traits to be generally visible, you can easily remove the check in the respective helper file.
-
 This plugin has been developed and tested with aresmush v0.108. Necessary adjustments are limited to custom parts of the code, so that future aresmush upgrades usually won't affect this plugin.
 
 ### What this plugin covers
@@ -122,6 +120,9 @@ The plugin comes with the standard Pendragon rpg traits, but you can actually co
 
 #### trait_points
 Trait points for chargen, per default 10.
+
+#### trait_visibility
+Here you can toggle whether traits are visible for other other players in the web profile. Per default, this is set to "false".
 
 #### shortcuts
 'traits' has been defined as shortcut for 'trait/list'. 
