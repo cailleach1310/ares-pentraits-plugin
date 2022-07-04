@@ -122,7 +122,7 @@ The plugin comes with the standard Pendragon rpg traits, but you can actually co
 Trait points for chargen, per default 10.
 
 #### trait_visibility
-Here you can toggle whether traits are visible for other other players in the web profile. Per default, this is set to "false".
+Here you can toggle whether traits are visible for other players in the web profile. Per default, this is set to "false".
 
 #### shortcuts
 'traits' has been defined as shortcut for 'trait/list'. 
