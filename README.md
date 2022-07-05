@@ -82,7 +82,7 @@ add the pentraits parameter to the RVSP hash that is used for creating the model
         return RSVP.hash({
              scene: api.requestOne('liveScene', { id: params['id'] }),
              abilities: api.request('charAbilities', { id: this.get('session.data.authenticated.id') }),
-             **pentraits: api.request('penTraits'),**
+             pentraits: api.request('penTraits'),
              locations: api.request('sceneLocations', { id: params['id'] })
            })
            .then((model) =>  {
