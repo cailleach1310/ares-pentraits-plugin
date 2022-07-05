@@ -11,9 +11,9 @@ A check is rolled with a 20-sided die, and the result is then compared to the ch
 
 Defining traits can be optional for players. When going with the default (after the first reset), this will have them start out with perfectly balanced pairs of traits. Critical successes in particular situations may qualify for a trait raise after chargen but this will be up to game staff. If a character has any traits higher than 15, this means that this character is famous for that particular trait. 
 
-Visibility of traits in the profile is limited to the character in question and admin. If you want traits to be generally visible, you can easily remove the check in the respective helper file.
-
 This plugin has been developed and tested with aresmush v0.108. Necessary adjustments are limited to custom parts of the code, so that future aresmush upgrades usually won't affect this plugin.
+
+If you want to have a working traits dropdown in the live-scene view on the webportal, however, you'll have to adjust non-custom code parts, namely the scene-live route and the scene-live template. This may need some extra checking and adjustments when upgrading your aresmush version. The plugin will work without these adjustments, but you'll have to type the traits into the input box. The (optional) adjustments are explained below.
 
 ### What this plugin covers
 * Chargen: Setting traits during chargen, from the game client or from the webportal, including a check for valid trait settings in the chargen app review.
@@ -71,6 +71,43 @@ Update with: custom_files/live-scene-custom-play.hbs
 #### ares-webportal/app/components/live-scene-custom-play.js
 Update with: custom_files/live-scene-custom-play.js
 
+### Optional Adjustments of Non-Custom Code Parts
+To enable a dropdown list of trait names for trait checks in the live-scene view of the webportal you will need to adjust the following non-custom parts of code. Please be aware that future upgrades might be more work, as you might have to add these code parts manually back in after an upgrade. 
+
+#### ares-webportal/routes/scene-live.js
+Add the pentraits parameter to the RVSP hash that is used for creating the model:
+
+     model: function(params) {
+        let api = this.gameApi;
+        return RSVP.hash({
+             scene: api.requestOne('liveScene', { id: params['id'] }),
+             abilities: api.request('charAbilities', { id: this.get('session.data.authenticated.id') }),
+             pentraits: api.request('penTraits'),
+             locations: api.request('sceneLocations', { id: params['id'] })
+           })
+           .then((model) =>  {
+             
+             if (model.scene.shared) {
+               this.router.transitionTo('scene', params['id']);             
+             }
+             else
+             {
+               return EmberObject.create(model);
+             }
+         });
+    },
+
+#### ares-webportal/app/templates/scene-live.hbs
+Add the pentraits parameter to the call of live-scene-control component:
+
+      <LiveSceneControl @scene={{this.model.scene}} @locations={{this.model.locations}} @abilities={{this.model.abilities}} @pentraits={{this.model.pentraits}} @places>
+
+#### ares-webportal/app/templates/components/live-scene-control.hbs
+Replace abilities in the call of the live-scene-custom-play component with the pentraits parameter:
+
+      <LiveSceneCustomPlay @pentraits={{this.pentraits}} @scene={{this.scene}} />
+
+
 ## Configuration
 
 ### Other Plugins
@@ -122,6 +159,9 @@ The plugin comes with the standard Pendragon rpg traits, but you can actually co
 
 #### trait_points
 Trait points for chargen, per default 10.
+
+#### trait_visibility
+Here you can toggle whether traits are visible for other players in the web profile. Per default, this is set to "false".
 
 #### shortcuts
 'traits' has been defined as shortcut for 'trait/list'. 
