@@ -5,7 +5,7 @@ module AresMUSH
         is_owner = (viewer && viewer.id == char.id)
 
         visible = Global.read_config("pentraits","trait_visibility")
-        
+
         show_traits = visible || PenTraits.can_manage_traits?(viewer) || is_owner
         
         if show_traits
