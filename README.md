@@ -13,7 +13,7 @@ Defining traits can be optional for players. When going with the default (after 
 
 This plugin has been developed and tested with aresmush v0.108. Necessary adjustments are limited to custom parts of the code, so that future aresmush upgrades usually won't affect this plugin.
 
-If you want to have a working traits dropdown in the live-scene view on the webportal, you'll have to adjust non-custom code parts, namely the scene-live route and the scene-live template. This may need some extra checking and adjustments when upgrading your aresmush version. The plugin will work without these adjustments, but you'll have to type the traits into the input box. The (optional) adjustments are explained below.
+If you want to have a working traits dropdown in the live-scene view on the webportal, however, you'll have to adjust non-custom code parts, namely the scene-live route and the scene-live template. This may need some extra checking and adjustments when upgrading your aresmush version. The plugin will work without these adjustments, but you'll have to type the traits into the input box. The (optional) adjustments are explained below.
 
 ### What this plugin covers
 * Chargen: Setting traits during chargen, from the game client or from the webportal, including a check for valid trait settings in the chargen app review.
@@ -72,7 +72,7 @@ Update with: custom_files/live-scene-custom-play.hbs
 Update with: custom_files/live-scene-custom-play.js
 
 ### Optional Adjustments of Non-Custom Code Parts
-For trait checks in the live-scene view of the webportal to look fancier and more similar to the fs3 roll popup, you will need to adjust the following non-custom parts of code. Please be aware that future upgrades might be more work, as you might have to add these code parts back in after an upgrade. 
+To enable a dropdown list of trait names for trait checks in the live-scene view of the webportal you will need to adjust the following non-custom parts of code. Please be aware that future upgrades might be more work, as you might have to add these code parts manually back in after an upgrade. 
 
 #### ares-webportal/routes/scene-live.js
 Add the pentraits parameter to the RVSP hash that is used for creating the model:
