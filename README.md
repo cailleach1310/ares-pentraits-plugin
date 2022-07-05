@@ -77,7 +77,7 @@ For trait checks in the live-scene view of the webportal to look fancier and mor
 #### ares-webportal/routes/scene-live.js
 add the pentraits parameter to the RVSP hash that is used for creating the model:
 
-  model: function(params) {
+     model: function(params) {
         let api = this.gameApi;
         return RSVP.hash({
              scene: api.requestOne('liveScene', { id: params['id'] }),
@@ -105,7 +105,7 @@ add the pentraits parameter to the call of live-scene-control component:
 #### ares-webportal/app/templates/components/live-scene-control.hbs
 Replace abilities in the call of the live-scene-custom-play component with the pentraits parameter:
 
-              <LiveSceneCustomPlay @pentraits={{this.pentraits}} @scene={{this.scene}} />
+      <LiveSceneCustomPlay @pentraits={{this.pentraits}} @scene={{this.scene}} />
 
 
 ## Configuration
