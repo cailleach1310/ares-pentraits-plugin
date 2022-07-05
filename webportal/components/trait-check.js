@@ -12,24 +12,9 @@ export default Component.extend({
     checkString: null,
     destinationType: 'scene',
 
-//    traitNames: function () {
-//     let api = this.get('gameApi');
-//     return api.request('penTraits');
-    traitNames: function() {
-        let traits = [];
-        let trait_list = this.get('char.custom.pen_traits');
-        trait_list.forEach(function(trait_fields) {
-            let field = trait_fields[name];
-            traits.push(field);
-            field = trait_fields[opposite];
-            traits.push(field);
-        });
-        return traits;
-    },
-
     didInsertElement: function() {
       this._super(...arguments);
-      let defaultTrait = this.traitNames ? this.traitNames[0] : 'not set';
+      let defaultTrait = this.pentraits ? this.pentraits[0] : '';
       this.set('checkString', defaultTrait);
     },
 
@@ -38,7 +23,7 @@ export default Component.extend({
       
       addCheck() {
         let api = this.gameApi;
-        let defaultTrait = this.traitNames ? this.traitNames[0] : '';
+        let defaultTrait = this.pentraits ? this.pentraits[0] : '';
       
         // Needed because the onChange event doesn't get triggered when the list is 
         // first loaded, so the roll string is empty.

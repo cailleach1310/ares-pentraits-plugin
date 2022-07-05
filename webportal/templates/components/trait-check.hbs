@@ -1,12 +1,16 @@
 <BsModalSimple @title="Add Trait Check" @closeTitle="Cancel" @submitTitle="Check" @size={{null}} @fade={{true}} @open={{this.selectTraitCheck}} @onSubmit={{action "addCheck"}} @onHide={{action (mut this.selectTraitCheck) false}}>
 
     <p><b>Trait Check</b></p>
-    <p>Select a trait, or type one in the box.</p>
-    <select onchange={{action (mut this.checkString) value="target.value"}}>
-      {{#each model.pentraits as |traitname|}}
-        <option value={{traitname}}>{{traitname}}</option>
-      {{/each}}
-    </select>
+    {{#if this.pentraits}}
+       <p>Select a trait, or type one into the box.</p>
+       <select onchange={{action (mut this.checkString) value="target.value"}}>
+       {{#each this.pentraits as |traitname|}}
+           <option value={{traitname}}>{{traitname}}</option>
+       {{/each}}
+       </select>
+    {{else}}
+       <p>Type a trait name  into the box.</p>
+    {{/if}}
     <Input @type="text" size={{25}} id="checkString" @enter={{action "addCheck"}} @value={{this.checkString}} />
 
    <hr>

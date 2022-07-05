@@ -1,6 +1,6 @@
 module AresMUSH
   module PenTraits
-    class PenTraitsForCheckRequestHandler
+    class TraitNamesRequestHandler
 
       def handle(request)
         traits = []
@@ -9,7 +9,8 @@ module AresMUSH
            b = PenTraits.get_opp_trait(a)
            traits << b
         end
-        traits.sort
+        pentraits = traits.sort
+        return pentraits
       end
 
     end
