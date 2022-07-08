@@ -68,8 +68,8 @@ module AresMUSH
       #        char.update(goals: Website.format_input_for_mush(chargen_data[:custom][:goals]))
       #        return []
       def self.save_fields_from_chargen(char, chargen_data)
-        PenTraits.save_char(char,chargen_data)
-        return []
+        alerts = PenTraits.save_char(char,chargen_data)
+        return alerts
       end
       
     end
