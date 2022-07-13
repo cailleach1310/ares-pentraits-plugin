@@ -1,15 +1,6 @@
 module AresMUSH
   module PenTraits
 
-#    def self.is_valid_trait?(name)
-#       if PenTraits.positives.include?(name.titlecase)
-#          return true
-#       else
-#          trait = PenTraits.get_opp_trait(name)
-#          return PenTraits.positives.include?(trait)
-#       end
-#    end
-
     def self.find_trait(char, trait_name)
      if !trait_name
         return
@@ -45,14 +36,6 @@ module AresMUSH
       end
       return points 
     end
-
-#    def self.emit_results(message, room)
-#      room.emit message       
-#      if (room.scene)
-#         Scenes.add_to_scene(room.scene, message)
-#      end
-#      Global.logger.info "Trait check: #{message}"
-#    end
 
   end
 end
