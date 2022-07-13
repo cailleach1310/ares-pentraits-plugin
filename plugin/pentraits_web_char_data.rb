@@ -25,16 +25,6 @@ module AresMUSH
           }}
       end
 
-#      def get_simple_trait_list()
-#        simple_traits = []
-#        PenTraits.positives.each do |a|
-#           simple_traits << a
-#           b = PenTraits.get_opp_trait(a)
-#           simple_traits << b
-#        end
-#        simple_traits.sort
-#      end
-#
     end
   end
 end
