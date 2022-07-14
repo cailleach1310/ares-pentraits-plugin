@@ -72,7 +72,7 @@ Update with: custom_files/live-scene-custom-play.hbs
 Update with: custom_files/live-scene-custom-play.js
 
 ### Optional Adjustments of Non-Custom Code Parts
-To enable a dropdown list of trait names for trait checks in the live-scene view of the webportal you will need to adjust the following non-custom parts of code. Please be aware that future upgrades might be more work, as you might have to add these code parts manually back in after an upgrade. 
+To enable a dropdown list of trait names for trait checks in the live-scene view of the webportal you will need to adjust the following non-custom parts of code. This is not mandatory. You can still check traits from the webportal, but you'll have to type the trait name into the box. Please be aware that future upgrades might be more work, as you might have to review and adjust these code parts manually after an upgrade. 
 
 #### ares-webportal/routes/scene-live.js
 Add the pentraits parameter to the RVSP hash that is used for creating the model:
