@@ -71,6 +71,16 @@ Update with: custom_files/live-scene-custom-play.hbs
 #### ares-webportal/app/components/live-scene-custom-play.js
 Update with: custom_files/live-scene-custom-play.js
 
+### Webportal layout of traits
+For a colored display of the traits in the character traits tab of a profile, you'll need to add the following lines to your custom.css (colors are suggestions and can be configured):
+
+.trait-dot-pos {
+  color: #20B2AA; }
+.trait-dot-neg {
+  color: #B22222; }
+
+If you prefer a more unified look that echoes the look of the sheet dots, simply replace "TraitDots" with "Fs3Dots" in the pen-traits-box.hbs and pen-traits-table.hbs (located in the folder /ares-webportal/app/templates/components/).
+
 ### Optional Adjustments of Non-Custom Code Parts
 To enable a dropdown list of trait names for trait checks in the live-scene view of the webportal you will need to adjust the following non-custom parts of code. This is not mandatory. You can still check traits from the webportal, but you'll have to type the trait name into the box. Please be aware that future upgrades might be more work, as you might have to review and adjust these code parts manually after an upgrade. 
 
