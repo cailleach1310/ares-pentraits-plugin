@@ -71,7 +71,7 @@ Update with: custom_files/live-scene-custom-play.hbs
 #### ares-webportal/app/components/live-scene-custom-play.js
 Update with: custom_files/live-scene-custom-play.js
 
-### Webportal layout of traits
+### Webportal Layout of Traits
 For a colored display of the traits in the character traits tab of a profile, you'll need to add the following lines to your custom.css (colors are suggestions and can be configured):
 
     .trait-dot-pos {
