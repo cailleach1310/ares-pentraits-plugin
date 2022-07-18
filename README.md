@@ -74,10 +74,10 @@ Update with: custom_files/live-scene-custom-play.js
 ### Webportal layout of traits
 For a colored display of the traits in the character traits tab of a profile, you'll need to add the following lines to your custom.css (colors are suggestions and can be configured):
 
-.trait-dot-pos {
-  color: #20B2AA; }
-.trait-dot-neg {
-  color: #B22222; }
+    .trait-dot-pos {
+      color: #20B2AA; }
+    .trait-dot-neg {
+      color: #B22222; }
 
 If you prefer a more unified look that echoes the look of the sheet dots, simply replace "TraitDots" with "Fs3Dots" in the pen-traits-box.hbs and pen-traits-table.hbs (located in the folder /ares-webportal/app/templates/components/).
 
