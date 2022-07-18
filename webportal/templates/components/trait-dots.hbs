@@ -1,0 +1,7 @@
+{{#each this.dots as |r|}}
+ {{#if r.fill}}
+ <i class="fas fa-plus-square trait-dot-pos" aria-hidden="true"></i>
+ {{else}}
+ <i class="fas fa-minus-square trait-dot-neg" aria-hidden="true"></i>
+ {{/if}}
+{{/each}}
