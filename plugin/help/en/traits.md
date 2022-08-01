@@ -2,7 +2,7 @@
 toc: Character Creation
 summary: Character traits - setting them and using them in roleplay.
 ---
-# Character Traits
+# Traits
 During character generation, you get a fixed amount of points you can spend on defining certain strengths and weaknesses of your character. The more particular deviations from the initial balanced state you want to have, the more points this will cost you.
 
 Character traits are actually pairs of opposing traits. Raising one means to lower the other. Each pair has a total of 20 points, meaning that perfectly balanced pairs have 10 points each.
