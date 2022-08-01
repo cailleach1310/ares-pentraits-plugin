@@ -1,5 +1,5 @@
 # ares-pentraits-plugin
-A plugin that implements a Pendragon traits system for aresmush.
+A Pendragon traits system plugin for aresmush.
 
 ## Credits
 Lyanna @ AresCentral
