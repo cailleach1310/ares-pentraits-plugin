@@ -7,6 +7,24 @@ module AresMUSH
       end
     end
 
+    def self.init_traits(char)
+      traits = {}
+      default = 10
+      PenTraits.traits.each do |a|
+        PendragonTraits.create(character: char, name: a['name'], rating: default, opposite: a['opposite'], opp_rating: default)
+      end
+    end
+
+    def self.not_set?(char)
+      test = PenTraits.positives.first
+      trait = PenTraits.find_trait(char, test)
+      if (trait)
+        return false
+      else
+        return true
+      end
+    end
+
     def self.set_trait(char, trait_name, rating)
       error = !PenTraits.is_valid_trait?(trait_name)
       if (error)
@@ -30,9 +48,6 @@ module AresMUSH
       
       if (trait)
         trait.update(rating: tr_rating, opp_rating: tr_opp_rating)
-          
-      else
-        trait = PendragonTraits.create(character: char, name: tr_storage, rating: tr_rating, opposite: tr_opposite, opp_rating: tr_opp_rating)
       end
        
       return nil
