@@ -6,10 +6,8 @@ module AresMUSH
     before_delete :delete_traits
     
     def delete_traits
-      self.pen_traits.each do |list|
-        list.each do |a|
-          a.delete
-        end
+      self.pen_traits.each do |a|
+        a.delete
       end
     end
 
