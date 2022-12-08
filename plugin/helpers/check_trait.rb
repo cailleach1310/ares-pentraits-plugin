@@ -137,9 +137,9 @@ module AresMUSH
       # ------------------
       if (!pc_name.blank?)
         if enactor.is_admin? 
-           char = Character.find_one_by_name(pc_name)
-           if (char)
-              message = PenTraits.do_trait_check_message(char, pc_trait, enactor)
+           character = Character.find_one_by_name(pc_name)
+           if (character)
+              message = PenTraits.do_trait_check_message(character, pc_trait, enactor)
            else return { error: t('pentraits.invalid_char_name') }
            end
         else
@@ -150,7 +150,7 @@ module AresMUSH
       # ------------------
       
       else
-        message = PenTraits.do_trait_check_message(enactor, pc_trait, enactor)
+        message = PenTraits.do_trait_check_message(char, pc_trait, char)
       end
       
       return { message: message }
