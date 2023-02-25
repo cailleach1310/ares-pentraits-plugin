@@ -32,6 +32,9 @@
          end
       end
 
+* *from the game client, 'load pentraits'*
+  
+  
 2. Access the Tinker section on the webportal: Admin -> Tinker
 
 * Add the following to your Tinker handle section:
