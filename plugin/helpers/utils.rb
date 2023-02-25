@@ -37,5 +37,11 @@ module AresMUSH
       return points 
     end
 
+    def self.uninstall_plugin
+      Character.all.each do |c|
+        c.delete_traits
+      end
+    end
+    
   end
 end
