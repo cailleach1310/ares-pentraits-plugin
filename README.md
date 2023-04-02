@@ -124,10 +124,10 @@ Replace abilities in the call of the live-scene-custom-play component with the p
 Configuration files of other plugins can be adjusted to make life easier. Suggestions can be found below.
 
 #### aresmush/game/config/achievements.yml
-You can configure trait achievements to show the same icon as fs3 achievements. 
+You can configure trait achievements to show the icon of a 20-sided die. 
 
      types:
-       trait: fa-cubes
+       trait: fa-dice-d20
 
 #### aresmush/game/config/chargen.yml
 For those going through chargen on the game client, it is necessary to add a chargen stage for traits.
