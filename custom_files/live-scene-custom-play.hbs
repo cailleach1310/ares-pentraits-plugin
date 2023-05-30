@@ -1,3 +1,7 @@
+<li><a href="#" {{action (mut this.selectAddRoll) true}} class="dropdown-item">Ability Roll</a></li>
+
+<NwodRoll @scene={{this.scene}} @destinationType="scene" @abilities={{this.custom.abilities}} @selectAddRoll={{this.selectAddRoll}} />
+
 <li><a href="#" {{action (mut this.selectTraitCheck) true}} class="dropdown-item">Check Trait</a></li>
 
-<TraitCheck @scene={{this.scene}} @destinationType="scene" @pentraits={{this.pentraits}} @selectTraitCheck={{this.selectTraitCheck}} />
+<TraitCheck @scene={{this.scene}} @destinationType="scene" @pentraits={{this.custom.pentraits}} @selectTraitCheck={{this.selectTraitCheck}} />

@@ -42,5 +42,16 @@ module AresMUSH
      return alerts
     end
 
+    # Stuff for the webportal trait check dropdown
+    def self.web_traitnames
+       traits = []
+       PenTraits.positives.each do |a|
+          traits << a
+          b = PenTraits.get_opp_trait(a)
+          traits << b
+       end
+       return traits.sort
+    end
+
   end
 end
