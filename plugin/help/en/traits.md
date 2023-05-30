@@ -25,7 +25,7 @@ The outcome is decided by a roll of a 20-sided die. Outcomes can be one of the f
 * failure - the result is below 20 and above the value of the trait. This will automatically trigger a check of the opposing trait.
 * critical failure - the result is a '20' and means a critical success of the opposing trait. 
 
-`trait/check <trait>` - Checks a trait
+`check <trait>` - Checks a trait
 
 ## Advancing Traits
 It is possible to advance traits over time. Each critical success or failure, or a success in a particularly critical situation can be considered as a reason to qualify for a trait raise. As this depends a lot upon context, it is vital to put in a +request along with a log reference. Admin will review this and possibly ask for another trait check to determine whether a trait is advanced. The adjustment of the trait can only be made through admins of the game.
