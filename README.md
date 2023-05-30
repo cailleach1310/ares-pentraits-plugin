@@ -11,7 +11,7 @@ A check is rolled with a 20-sided die, and the result is then compared to the ch
 
 Defining traits can be optional for players. When going with the default (after the first reset), this will have them start out with perfectly balanced pairs of traits. Critical successes in particular situations may qualify for a trait raise after chargen but this will be up to game staff. If a character has any traits higher than 15, this means that this character is famous for that particular trait. 
 
-This plugin has been developed and tested with aresmush v0.108 - v1.0.6. An older version of this plugin had instructions on modiyfying code in non-custom parts of AresMUSH code. However, since v1.0.6, all necessary adjustments are limited to custom parts of the code, so that future aresmush upgrades usually won't affect this plugin.
+This plugin has been developed and tested with aresmush v0.108 - v1.0.6. An older version of this plugin had instructions on modifying code in non-custom parts of AresMUSH code. However, since v1.0.6, all necessary adjustments are limited to custom parts of the code, so that future aresmush upgrades usually won't affect this plugin.
 
 ### What this plugin covers
 * Chargen: Setting traits during chargen, from the game client or from the webportal, including a check for valid trait settings in the chargen app review.
