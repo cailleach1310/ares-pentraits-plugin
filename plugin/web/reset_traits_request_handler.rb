@@ -6,7 +6,7 @@ module AresMUSH
          if !char
              return { error: t('pentraits.invalid_char_name') }
          else 
-             PenTraits.reset_char(char)        
+             PenTraits.init_traits(char)        
          end
          {
              name: char.name 
