@@ -58,6 +58,8 @@ module AresMUSH
         return ResetTraitsRequestHandler      
       when "addSceneCheck"
         return AddSceneCheckRequestHandler
+      when "addJobCheck"
+        return AddJobCheckRequestHandler
       when "penTraits"
         return TraitNamesRequestHandler
        end

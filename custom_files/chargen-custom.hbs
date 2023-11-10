@@ -1,18 +1,3 @@
-  <div role="tabpanel" class="tab-pane" id="pentraits">
-     <div class="cg-tip"><AnsiFormat @text="This is the place where you can configure traits. You can spend upto {{char.custom.cg_traits_max_points}} points, but you aren't required to spend any of these points at all, this would leave the traits for the character perfectly balanced. <br><br>Please note that raising one trait will lower the opposing trait." /></div>
-     <hr>
-     {{#if char.custom.cg_traits_set}}
-        <p><b>Available Trait Points:</b> {{this.availableTraitPoints}} / {{char.custom.cg_traits_max_points}}</p>
-        {{#each char.custom.pen_traits as |trait|}}
-        <hr><PenTraitsBox @name={{trait.name}} @rating={{mut trait.rating}} @opposite={{trait.opposite}} @opp_rating={{mut trait.opp_rating}} @maxRating=20 @availPoints={{mut this.availableTraitPoints}} @updated={{action "traitChanged"}}>
-        </PenTraitsBox>
-        {{/each}}<hr>
-    {{else}}
-     <div class="cg-tip"><AnsiFormat @text="You need to reset your traits first!" /></div>
-
-        <div class="action-buttons">
-           <button name="reset" {{action 'resetTraits' char.name}} class="btn btn-secondary">Reset Traits</button>
-        </div>     
-    {{/if}}
-
+   <div role="tabpanel" class="tab-pane" id="pentraits">
+     <PentraitsChargen @pen_traits={{this.char.custom.pen_traits}} @cg_traits_set={{this.char.custom.cg_traits_set}} @cg_traits_max_points={{this.char.custom.cg_traits_max_points }} @updated={{action "traitChanged"}}/>
    </div>
