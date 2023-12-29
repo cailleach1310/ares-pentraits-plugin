@@ -59,7 +59,7 @@ export default Component.extend({
         }
         else {
           destinationId = this.get('job.id');
-          command = 'addJobTrait'
+          command = 'addJobCheck'
         }
         
         api.requestOne(command, { id: destinationId,
