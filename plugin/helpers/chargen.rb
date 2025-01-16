@@ -2,9 +2,12 @@ module AresMUSH
   module PenTraits
 
     def self.reset_char(char)
-      PenTraits.positives.each do |a|
-        PenTraits.set_trait(char, a, 10)
+      if !not_set?(char)
+         char.pen_traits.each do |a|
+           a.delete
+         end
       end
+      init_traits(char)
     end
 
     def self.init_traits(char)
