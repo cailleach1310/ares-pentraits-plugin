@@ -11,6 +11,6 @@
      <div class="cg-tip"><AnsiFormat @text="You need to reset your traits first!" /></div>
 
         <div class="action-buttons">
-           <button name="reset" {{action 'resetTraits' this.name}} class="btn btn-secondary">Reset Traits</button>
+           <button name="reset" {{on 'click' (fn this.resetTraits this.name)}} class="btn btn-secondary">Reset Traits</button>
         </div>     
     {{/if}}

@@ -1,4 +1,4 @@
-import EmberObject, { computed } from '@ember/object';
+import EmberObject, { computed, action } from '@ember/object';
 import { A } from '@ember/array';
 import Component from '@ember/component';
 import { inject as service } from '@ember/service';
@@ -37,23 +37,21 @@ export default Component.extend({
     return points;
   },
 
-  actions: {
+  @action
+  traitChanged() {
+     this.updated();
+  },
 
-      traitChanged() {
-        this.updated();
-      },
-
-      resetTraits(id) {
-        let api = this.gameApi;
-        api.requestOne('resetTraits', { name: id }, null)
-            .then( (response) => {
-                if (response.error) {
-                    return;
-                }
-                this.flashMessages.success(response.name + "'s traits have been reset!");
-            });
-      },
-
+  @action
+  resetTraits(id) {
+     let api = this.gameApi;
+     api.requestOne('resetTraits', { name: id }, null)
+       .then( (response) => {
+           if (response.error) {
+              return;
+           }
+           this.flashMessages.success(response.name + "'s traits have been reset!");
+       });
   }
 
 });

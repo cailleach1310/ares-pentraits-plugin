@@ -2,8 +2,8 @@ module AresMUSH
   module PenTraits
     class AddJobCheckRequestHandler
       def handle(request)
-        job = Job[request.args[:id]]
-        char_name = request.args[:pc_name] || ""
+        job = Job[request.args['id']]
+        char_name = request.args['pc_name'] || ""
         enactor = request.enactor
 
         error = Website.check_login(request)

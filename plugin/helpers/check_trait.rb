@@ -123,10 +123,10 @@ module AresMUSH
     # Returns either { message: roll_result_message }  or  { error: error_message }
     def self.determine_web_check_result(request, char, enactor)
       
-      pc_name = request.args[:pc_name] || ""
-      pc_trait = request.args[:pc_trait] || ""
+      pc_name = request.args['pc_name'] || ""
+      pc_trait = request.args['pc_trait'] || ""
       if (pc_trait == "")    
-         pc_trait = request.args[:check_string].titlecase || ""
+         pc_trait = request.args['check_string'].titlecase || ""
       end
       if !PenTraits.is_valid_trait?(pc_trait)
          return { error: t('pentraits.trait_not_found', :name => pc_trait) }
