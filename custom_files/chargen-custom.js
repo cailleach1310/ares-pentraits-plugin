@@ -41,12 +41,9 @@ export default Component.extend({
     this.set('charErrors', A());
   },
     
-  actions: {
-
-      traitChanged() {
-        this.validateChar();
-      }
+  @action
+  traitChanged() {
+     this.validateChar();
   }
-
 
 });
